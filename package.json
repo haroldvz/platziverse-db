@@ -4,8 +4,14 @@
   "description": "A db module for platziverse project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "standard --fix"
   },
   "author": "Harold",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "pg": "^7.5.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.39.1"
+  }
 }
