@@ -13,6 +13,10 @@ module.exports = function setupMetricModel (config) {
     type: {
       type: Sequelize.STRING,
       allowNull: false// no permits null data
+    },
+    value: {
+      type: Sequelize.TEXT,
+      allowNull: false
     }
 
   })
