@@ -4,14 +4,16 @@
   "description": "A db module for platziverse project",
   "main": "index.js",
   "scripts": {
-    "setup": "DEBUG=platziverse* node setup.js",
+    "setup": "DEBUG=platziverse:* node setup.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "standard --fix"
   },
   "author": "Harold",
   "license": "MIT",
   "dependencies": {
+    "chalk": "^2.4.1",
     "debug": "^4.1.0",
+    "inquirer": "^6.2.0",
     "pg": "^7.5.0",
     "pg-hstore": "^2.3.2",
     "sequelize": "^4.39.1"
