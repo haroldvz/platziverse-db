@@ -10,7 +10,7 @@ module.exports = function setupAgentModel (config) {
   // sequelize.define makes the sql table with name agents in plural
   return sequelize.define('agent', {
 
-    uiid: {
+    uuid: {
       type: Sequelize.STRING,
       allowNull: false// no permits null data
     },

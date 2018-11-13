@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "setup": "DEBUG=platziverse:* node setup.js",
+    "example": "DEBUG=platziverseexample:* node examples/index.js",
     "test": "DEBUG=platziverse:* nyc --reporter=lcov --reporter=text-lcov ava test/ --verbose",
     "lint": "standard --fix"
   },
