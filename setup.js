@@ -20,7 +20,7 @@ async function setup () {
     return console.log('Nothing happened ...')
   }
 
-  const config = {
+  /*const config = {
     database: process.env.DB_NAME || 'platziverse',
     username: process.env.DB_USER || 'platzi',
     password: process.env.DB_PASS || 'platzi',
@@ -28,7 +28,9 @@ async function setup () {
     dialect: 'postgres',
     logging: s => debug(s),
     setup: true
-  }
+  }*/
+
+  const config = require('./config-db')(true)
 
   await db(config).catch(handleFatalError)
 

@@ -47,7 +47,7 @@ async function run() {
     console.log('metrics',metrics)
 
     const metricsByType = await Metric.findByTypeAgentUUid('red',agent.uuid).catch(handleFatalError)
-    console.log('metrics',metricsByType)
+    console.log('metricsByType',metricsByType)
 
     
 }
